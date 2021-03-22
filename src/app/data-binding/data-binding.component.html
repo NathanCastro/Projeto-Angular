@@ -1,0 +1,17 @@
+<h2> PALAVRA:{{palavra}}</h2>
+<h3>Cor: {{color}}</h3>
+
+<input type="text" [value]="initialValue"><br><br>
+
+<button [disabled]="isDisabled">Clique aqui</button><br><br>
+
+<br>
+
+<p [attr.aria-label]="isDisabled ? 'Botão desabilitado' : accessibilityText">
+    um texto qualquer.....
+</p>
+
+<br>
+
+<img [src]="imageURL">
+
