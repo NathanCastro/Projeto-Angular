@@ -1,5 +1,31 @@
-<h2> PALAVRA:{{palavra}}</h2>
-<h3>Cor: {{color}}</h3>
+
+<h1>Exercicio Contador</h1>
+<app-contador
+[valorDoNumero]="valorInicial"
+(valorMudou)="valorAtualizado($event)"
+></app-contador><br>
+<hr>
+
+
+
+<!-- Event binding-->
+<h1>Event Binding</h1><br>
+
+<button (click)="onClickBotaoEmissor($event)"> Emitir informação de clique</button><br><br><br>
+
+<button (click)="onClick($event)" (mouseenter)="passouMouse()">CLICK</button>
+<input type="text" [value]="valorDoInput" (keyup)="DigitouAlgo($event)"><br><br>
+Valor do Input: {{valorDoInput}}<br>
+
+<hr>
+<br>
+
+
+<!-- Property binding-->
+
+<h1>Property Binding</h1>
+<h2> PALAVRA: {{palavra}}</h2><!--//proprity binding-->
+<h2>Cor: {{color}}</h2><!--//proprity binding-->
 
 <input type="text" [value]="initialValue"><br><br>
 
@@ -13,5 +39,5 @@
 
 <br>
 
-<img [src]="imageURL">
+<img class="foto" [src]="imageURL">
 

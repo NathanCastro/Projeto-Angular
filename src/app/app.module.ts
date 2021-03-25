@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { ContadorComponent } from './contador/contador.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     FooterComponent,
     MainComponent,
     HomeComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    ContadorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({//decorator
   selector: 'app-header',
@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  title= "Sejam bem vindos"
+  
+  
+  @Input() title:string;
+  
+
+  isDisabled = true;
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -9,4 +9,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
  pudim="sobremesa"
  cor="azul"
+
+ sozinho="Sejam Bem Vindos"
+
+  constructor(){
+    setTimeout(()=> {
+      this.sozinho="Novo Título dps de 3s";
+    },3000)
+  }
+
+  eventoRecebido($event){
+    console.log('AppComponent: Evento recebido', $event)
+  }
+
+  
+
+  
+  
+
 }

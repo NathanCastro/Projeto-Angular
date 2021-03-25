@@ -1,9 +1,15 @@
-<app-header></app-header>
+<app-header 
+    [title]="sozinho">
+</app-header>
+
+
 
 <app-data-binding
-    [palavra]="pudim"
-    [color]="cor">
+    [palavra]="pudim" 
+    [color]="cor"
+    (clicado)="eventoRecebido($event)">
 </app-data-binding>
+
 
 <app-footer></app-footer>
 
