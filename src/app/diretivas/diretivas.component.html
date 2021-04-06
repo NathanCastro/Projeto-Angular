@@ -1,0 +1,72 @@
+<!--<h2>Valor atual dentro de deveExibir: <strong> {{deveExibir}} </strong></h2>
+
+<button (click)="trocarValor()">TROCAR VALOR</button><hr>
+
+
+<div *ngIf="deveExibir; else blocoSenao">
+    <h1>Hello word</h1>
+    
+</div><hr>
+
+<ng-template #blocoSenao>
+    Vou ser exibido quando o deveExibir FOR FALSE
+</ng-template>
+
+<div *ngIf="soma(6,7)>10">
+    <h1>A soma deu maior q 10 por isso, deu true por isso apareceu</h1>
+    <hr>
+</div>
+
+
+//SINTAXE EXPANDIDA
+<ng-template [ngIf]="deveExibir">
+    <div><h1>a condição com property binding</h1></div><hr>
+</ng-template>
+
+<div *ngIf="condition; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>Conteúdo para renderizar quando a condição é true.</ng-template>
+<ng-template #elseBlock>Conteúdo para renderizar quando a condição é false.</ng-template>
+
+<hr>
+<hr>
+
+<ul>
+    <li *ngFor="let fruta of listaFrutas">{{fruta}}</li>
+</ul>
+<hr>
+
+<p *ngFor="let fruta of listaFrutas">{{fruta}}</p>
+
+<hr>
+<ul>
+    <li *ngFor="let carro of carrosLista; let i = index; first as primeiro; last as ultimo">
+       {{primeiro}} {{i + 1 }} {{carro.placa}}-{{carro.cor}}- {{ultimo}}
+    </li>
+
+
+    - {{zueira.memes.titulo}} {{zueira.imagemURL}}
+</ul>
+
+-->
+
+
+<h1>Memes Diretivas</h1>
+
+<ul>
+    <li *ngFor="let zueira of MEMES_AGRUPADOS_POR_CATEGORIA">
+       {{zueira.categoria}} 
+        <div *ngFor= "let meme of zueira.memes; let par = even">
+            <img [src]="PREFIXO_URL + meme.imagemURL" *ngIf="par; else blocoPar">
+            <ng-template #blocoPar>
+                <h2>PAR</h2>
+            </ng-template>
+            
+            
+
+
+        </div>
+    </li>
+   
+
+    
+</ul>

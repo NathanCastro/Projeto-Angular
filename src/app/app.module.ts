@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ContadorComponent } from './contador/contador.component';
+import { DiretivasComponent } from './diretivas/diretivas.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContadorComponent } from './contador/contador.component';
     MainComponent,
     HomeComponent,
     DataBindingComponent,
-    ContadorComponent
+    ContadorComponent,
+    DiretivasComponent
   ],
   imports: [
     BrowserModule,
