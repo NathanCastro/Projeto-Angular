@@ -1,0 +1,20 @@
+<div>
+    <button (click)="virarVerde()">Vira Verde</button>
+    
+    <p [ngClass]="deveSerVerde ? 'verde' : 'vermelho'">Funcionou Verde</p>
+
+    <P [ngClass]="{
+        'verde': deveSerVerde,
+        'vermelho': !deveSerVerde
+    }"> NGCLASS2 com obeto
+    </P>
+
+    <p [class]="deveSerVerde ? 'verde' : 'vermelho'">
+        Testando PropertyBinding Class
+    </p>
+
+    <p [class.verde]="deveSerVerde">
+        TEsnta
+    </p>
+    
+</div>

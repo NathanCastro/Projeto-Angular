@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ContadorComponent } from './contador/contador.component';
 import { DiretivasComponent } from './diretivas/diretivas.component';
+import { ExercicioNgclassComponent } from './exercicio-ngclass/exercicio-ngclass.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { DiretivasComponent } from './diretivas/diretivas.component';
     HomeComponent,
     DataBindingComponent,
     ContadorComponent,
-    DiretivasComponent
+    DiretivasComponent,
+    ExercicioNgclassComponent
   ],
   imports: [
     BrowserModule,
