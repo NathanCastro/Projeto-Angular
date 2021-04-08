@@ -14,6 +14,7 @@ import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exe
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { MainComponent } from './shared/components/main/main.component';
+import { LoginComponent } from './login/login.component';
 
 registerLocaleData(localePT, 'pt');
 
@@ -28,7 +29,8 @@ registerLocaleData(localePT, 'pt');
     ContadorComponent,
     DiretivasComponent,
     ExercicioNgclassComponent,
-    ExercicioPipesComponent
+    ExercicioPipesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
