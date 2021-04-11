@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 import { ContadorComponent } from './shared/components/contador/contador.component';
 import { DataBindingComponent } from './shared/components/data-binding/data-binding.component';
 import { DiretivasComponent } from './shared/components/diretivas/diretivas.component';
@@ -14,8 +15,8 @@ import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exe
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { MainComponent } from './shared/components/main/main.component';
-import { LoginComponent } from './login/login.component';
-import { TesteComponent } from './teste/teste.component';
+import { ExtratoComponent } from './extrato/extrato.component';
+import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
 
 registerLocaleData(localePT, 'pt');
 
@@ -32,7 +33,8 @@ registerLocaleData(localePT, 'pt');
     ExercicioNgclassComponent,
     ExercicioPipesComponent,
     LoginComponent,
-    TesteComponent
+    ExtratoComponent,
+    NaoEncontradoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,20 @@
 <header class="header">
     <h1 class="header__title"> {{title}}</h1>
-  
+    
+    <ul class="nav-bar-list">
+        <li>
+            <a routerLink="home" routerLinkActive="ativado" >Home</a><!-- routerLink serve para quando clicar no link não ficar recarregando -->
+
+        </li>
+        <li>
+            <a routerLink="extrato" routerLinkActive="ativado">Extrato</a><!--routerLinkActive ele coloca uma classe para que vc possa estilizar essa clase-->
+            
+        </li>
+        <li>
+            <a routerLink="login" routerLinkActive="ativado">Login</a>
+            
+        </li>
+
+    </ul>
+
 </header>
