@@ -1,44 +1,32 @@
 import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import localePT from '@angular/common/locales/pt';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ExtratoComponent } from './extrato/extrato.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { ContadorComponent } from './shared/components/contador/contador.component';
-import { DataBindingComponent } from './shared/components/data-binding/data-binding.component';
-import { DiretivasComponent } from './shared/components/diretivas/diretivas.component';
-import { ExercicioNgclassComponent } from './shared/components/exercicio-ngclass/exercicio-ngclass.component';
-import { ExercicioPipesComponent } from './shared/components/exercicio-pipes/exercicio-pipes.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { MainComponent } from './shared/components/main/main.component';
-import { ExtratoComponent } from './extrato/extrato.component';
 import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(localePT, 'pt');
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    MainComponent,
-    HomeComponent,
-    DataBindingComponent,
-    ContadorComponent,
-    DiretivasComponent,
-    ExercicioNgclassComponent,
-    ExercicioPipesComponent,
+    AppComponent,    
+    HomeComponent,    
     LoginComponent,
     ExtratoComponent,
     NaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    SharedModule,
   ],
   providers: [{
     provide: LOCALE_ID,
